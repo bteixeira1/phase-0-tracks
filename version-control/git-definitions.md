@@ -1,4 +1,5 @@
-# Git Definitions
+## Git Definitions
+# Hi Glenna!
 
 **Instructions: ** Define each of the following Git concepts.
 
