@@ -32,9 +32,23 @@ figcaption {
 }
 
 body {
-  width: 960px;
+  max-width: 960px;
 }
 
-#nav-bar {
-  width: 200px;
+
+.left {
+  position:absolute;
+  left:0; top:2px; bottom: 0;
+  width: 20%;
+    }
+
+.main {
+    position: absolute;
+    left:210px; top:2px; right:0; bottom:0;
+    }
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 12px;
+  }
 }
