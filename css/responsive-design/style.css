@@ -52,3 +52,9 @@ body {
     font-size: 12px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .left {
+    width: 20px;
+  }
+}
