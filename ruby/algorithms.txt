@@ -1,0 +1,29 @@
+Algorithm #1: Robot using an elevator
+-After elevator doors open walk forward until opposing wall
+-Once at opposing wall, turn around
+-Sidestep to the right until side wall is reached
+-Walk forward until opposing wall is reached
+-If there are no buttons in front of you, sidestep to the left until side wall is reached.
+-Connect to owner’s cellphone and acquire elevation level
+-Match elevation level with opposing floor level
+-Match opposing floor level with floor levels on buttons
+-Once matched, click on the floor level 
+
+Algorithm #2: Pulling out of a parking spot
+1. Place key in ignition
+2. Turn key until car starts
+3. Look at left side mirror, ensure unobstructed view is present
+4. Look at right side mirror, ensure unobstructed view is present
+5. Look at rearview mirror, ensure unobstructed view is present
+6. Straighten front wheels
+7. Put gearshift selector in reverse
+8. Move back until rear bumper is six inches away from the from bumper of the vehicle behind you.
+	8a. If no vehicle is behind you, move back 6 feet.
+9.Turn steering all the way towards the center of the street.
+10. Put gearshift selector in drive
+11. Move forward until front bumper is three inches away from the vehicle in front of you. Repeat steps 7-11 until right side mirror lines up with the rear door of the vehicle in front of you.
+	11a. If no vehicle is in front of you, move forward until right side mirror lines up with the rear door of the vehicle in front of you.
+12. Straighten the wheel and move forward.
+
+	
+	
