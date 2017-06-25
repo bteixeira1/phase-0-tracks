@@ -5,7 +5,6 @@ def encrypt(string)
   for i in 0...string.length
     string[i] = string[i].next[0]
   end
-  puts string
   string
 end
 
@@ -36,8 +35,26 @@ decrypt("afe") should return "zed"
 
 =end
 
-puts encrypt("abc")
-puts encrypt("zed")
-puts decrypt("bcd")
-puts decrypt("afe")
+#puts encrypt("abc")
+#puts encrypt("zed")
+#puts decrypt("bcd")
+#puts decrypt("afe")
+
+#decrypt(encrypt("swordfish"))
+
+
+#The encrypt method runs first returning "txpsegjti" and the decrypt method runs returning "swordfish".
+
+puts "Would you like to decrypt or encrypt a password?"
+password_cryption = gets.chomp
+puts "What password would you like to #{password_cryption}?"
+password = gets.chomp
+
+if password_cryption == "encrypt"
+  password = encrypt(password)
+elsif password_cryption == "decrypt"
+  password = decrypt(password)
+end
+
+puts "Your #{password_cryption}ed password is #{password}"
 
