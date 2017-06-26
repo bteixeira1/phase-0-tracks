@@ -19,6 +19,8 @@ garlic_preference = gets.chomp.downcase
 puts "Would you like to enroll in the company's health insurance?"
 insurance_preference = gets.chomp.downcase
 #BOOLEAN
+puts "Please list any allergies you may have. If you are finished or have none, type done"
+user_alergy = gets.chomp.to_s
 
 if garlic_preference == "yes"
   garlic_preference = true
@@ -32,6 +34,11 @@ else
   insurance_preference = false
 end
 
+until user_alergy == "done" || user_alergy == "sunshine"
+  puts "Any others?"
+  user_alergy = gets.chomp
+end
+
 correct_birth_year = current_year - employee_age
 if correct_birth_year == employee_birth_year && (garlic_preference == true || insurance_preference == true)
   if employee_name == "Drake Cula" || employee_name == "Tu Fang"
@@ -40,14 +47,19 @@ elsif puts "Probably not a vampire"
 end
 elsif correct_birth_year != employee_birth_year && (garlic_preference == true || insurance_preference == true)
   puts "Probably a vampire"
-elsif correct_birth_year != employee_birth_year && garlic_preference == false && insurance_preference == false
+elsif correct_birth_year != employee_birth_year && garlic_preference == false && insurance_preference == false && user_alergy != "sunshine"
   puts "Almost certainly a vampire"
-elsif employee_name = "Drake Cula" || employee_name = "Tu Fang"
-  puts "Definitely a vampire"
 else
-  puts "Results inconclusive"
+if user_alergy == "sunshine"
+  puts "Probably a vampire."
+  if user_alergy != "sunshine"
+    puts "Results inconclusive"
+  end
+end
 end
 
 times_processed += 1
+
+#puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
 
 end
