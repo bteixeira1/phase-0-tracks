@@ -1,3 +1,10 @@
+puts "How many employees will be processed?"
+employees_to_be_processed = gets.chomp.to_i
+
+times_processed = 0
+
+while times_processed < employees_to_be_processed
+
 current_year = 2017
 
 puts "What is your name?"
@@ -39,4 +46,8 @@ elsif employee_name = "Drake Cula" || employee_name = "Tu Fang"
   puts "Definitely a vampire"
 else
   puts "Results inconclusive"
+end
+
+times_processed += 1
+
 end
